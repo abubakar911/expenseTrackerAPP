@@ -143,6 +143,7 @@ input[type="number"] {
   color: #fff !important;
   font-size: 20px !important;
   line-height: 20px !important;
+  border-radius: 5px;
   padding: 2px 5px !important;
   position: absolute !important;
   top: 50% !important;
@@ -154,4 +155,13 @@ input[type="number"] {
 
 .list li:hover .delete-btn {
   opacity: 1 !important;
+}
+
+/* Media query for small screens to display the delete button permanently */
+@media (max-width: 768px) {
+  .delete-btn {
+    opacity: 1 !important;
+    transform: translate(-110%, -50%) !important;
+    border-radius: 5px;
+  }
 }

@@ -15,11 +15,11 @@ export const IncomeExpenses: React.FC = () => {
     <div className="inc-exp-container container">
       <div>
         <h4>Income</h4>
-        <h6 className="money plus">+${income}</h6>
+        <h6 className="money plus">+{income}<small className="h6">RS</small></h6>
       </div>
       <div>
         <h4>Expense</h4>
-        <h6 className="money minus">-${expense}</h6>
+        <h6 className="money minus">-{expense}<small className="h6">RS</small></h6>
       </div>
     </div>
   );

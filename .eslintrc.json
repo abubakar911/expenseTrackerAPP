@@ -4,5 +4,6 @@
     "next/typescript",
     "plugin:testing-library/react",
     "plugin:jest-dom/recomended"
-  ]
+  ],
+  "plugins": ["jest-dom"]
 }

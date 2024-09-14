@@ -10,7 +10,7 @@ type FormData = {
 };
 
 export const AddTransaction: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (data: FormData) => {
@@ -20,6 +20,7 @@ export const AddTransaction: React.FC = () => {
       amount: +data.amount,
     };
     addTransaction(newTransaction);
+    reset(); // Reset form fields to their default values after submission
   };
 
   return (

@@ -12,7 +12,7 @@ export const Balance: React.FC = () => {
   return (
     <div className="text-center mt-4">
       <h4>Your Balance</h4>
-      <h1>${total}</h1>
+      <h1>{total}<small className="h6">PKR</small></h1>
     </div>
   );
 };
